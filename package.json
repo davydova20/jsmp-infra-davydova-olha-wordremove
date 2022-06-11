@@ -1,0 +1,24 @@
+{
+  "name": "jsmp-infra-davydova-olha-wordremove",
+  "version": "1.0.0",
+  "description": "Remove a given word from a string",
+  "main": "removeWord.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "test:unit": "jest",
+    "prepublish": "npm-run-all build test:unit"
+  },
+  "author": "davydova-20",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^28.0.4",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
