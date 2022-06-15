@@ -1,5 +1,16 @@
 const {removeWord} = require("./removeWord");
 
-test('remove word from string', () => {
-    expect(removeWord("hello world", "hello")).toBe("world");
+describe("remove word", () => {
+    test('should remove specified word', () => {
+        expect(removeWord("hello world", "hello")).toBe("world");
+    })
+
+    test('should return empty string', () => {
+        expect(removeWord("", "hello")).toBe("");
+    })
+
+    test('should return string without blank space', () => {
+        expect(removeWord("hello world")).toBe("helloworld");
+    })
+
 })

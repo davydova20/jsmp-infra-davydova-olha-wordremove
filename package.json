@@ -1,6 +1,6 @@
 {
   "name": "jsmp-infra-davydova-olha-wordremove",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Remove a given word from a string",
   "main": "removeWord.js",
   "scripts": {
